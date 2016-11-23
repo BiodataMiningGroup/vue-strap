@@ -1,5 +1,5 @@
 <template>
-  <div style="position: relative" :class="{'open':showDropdown}">
+  <div :style="{position: 'relative'}" :class="{'open':showDropdown}">
     <input type="text" class="form-control" autocomplete="off"
       v-model="val"
       :placeholder="placeholder"
