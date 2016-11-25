@@ -32,6 +32,7 @@ export default {
     limit: {type: Number, default: 8},
     matchCase: {type: Boolean, default: false},
     matchStart: {type: Boolean, default: false},
+    matchProperty: {type: String},
     onHit: {
       type: Function,
       default (item) {
@@ -82,7 +83,13 @@ export default {
         this.items = this.items.slice(0, this.limit)
       } else {
         this.items = (data || []).filter(value => {
-          if (typeof value === 'object') { return true }
+          if (typeof value === 'object') {
+            if (this.matchProperty) {
+              value = value[this.matchProperty]
+            } else {
+              return true
+            }
+          }
           value = this.matchCase ? value : value.toLowerCase()
           var query = this.matchCase ? this.val : this.val.toLowerCase()
           return this.matchStart ? value.indexOf(query) === 0 : value.indexOf(query) !== -1
