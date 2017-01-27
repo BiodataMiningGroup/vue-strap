@@ -119,6 +119,7 @@ export default {
       this.val = ''
       this.loading = false
       this.showDropdown = false
+      this.current = 0
     },
     setActive (index) {
       this.current = index
