@@ -74,7 +74,6 @@ export default {
         item: {default: null}
       }
     }
-    this.update()
   },
   methods: {
     setItems (data) {
