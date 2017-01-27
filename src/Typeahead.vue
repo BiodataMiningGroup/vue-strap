@@ -4,10 +4,11 @@
       v-model="val"
       :placeholder="placeholder"
       @blur="showDropdown = false"
-      @keydown.down="down"
-      @keydown.enter= "hit"
-      @keydown.esc="reset"
-      @keydown.up="up"
+      @keydown.stop.prevent.down="down"
+      @keydown.stop.prevent.enter="hit"
+      @keydown.stop.prevent.esc="reset"
+      @keydown.stop.prevent.up="up"
+      @keydown="update"
     />
     <ul class="dropdown-menu" ref="dropdown">
       <li v-for="(item, i) in items" :class="{'active': isActive(i)}">
@@ -60,7 +61,6 @@ export default {
   watch: {
     val (val, old) {
       this.$emit('input', val)
-      if (val !== old) this.update()
     },
     value (val) {
       if (this.val !== val) { this.val = val }
@@ -97,7 +97,11 @@ export default {
       }
       this.showDropdown = this.items.length > 0
     },
-    update: delayer(function () {
+    update: delayer(function (e) {
+      if (e && e.keyCode === 13) {
+        // don't update on enter
+        return false
+      }
       if (!this.val) {
         this.reset()
         return false
@@ -122,8 +126,7 @@ export default {
     isActive (index) {
       return this.current === index
     },
-    hit (e) {
-      e.preventDefault()
+    hit () {
       this.onHit(this.items[this.current], this)
     },
     up () {
