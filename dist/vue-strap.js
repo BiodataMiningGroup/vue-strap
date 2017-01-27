@@ -1697,7 +1697,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/media/m/data/uni/biodtmin/dias.project/vue-strap/src/components/Dropdown.vue"
+	__vue_options__.__file = "/media/m/data/uni/biodtmin/biigle.project/vue-strap/src/components/Dropdown.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -1708,9 +1708,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-05062aaa", __vue_options__)
+	    hotAPI.createRecord("data-v-4d58f5dc", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-05062aaa", __vue_options__)
+	    hotAPI.reload("data-v-4d58f5dc", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Dropdown.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -2114,7 +2114,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-05062aaa", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-4d58f5dc", module.exports)
 	  }
 	}
 
@@ -2141,7 +2141,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/media/m/data/uni/biodtmin/dias.project/vue-strap/src/components/Tab.vue"
+	__vue_options__.__file = "/media/m/data/uni/biodtmin/biigle.project/vue-strap/src/components/Tab.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -2152,9 +2152,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-366a1c2a", __vue_options__)
+	    hotAPI.createRecord("data-v-61f93324", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-366a1c2a", __vue_options__)
+	    hotAPI.reload("data-v-61f93324", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Tab.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -2272,7 +2272,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-366a1c2a", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-61f93324", module.exports)
 	  }
 	}
 
@@ -2302,7 +2302,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/media/m/data/uni/biodtmin/dias.project/vue-strap/src/components/TabGroup.vue"
+	__vue_options__.__file = "/media/m/data/uni/biodtmin/biigle.project/vue-strap/src/components/TabGroup.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -2313,9 +2313,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-19b9ce04", __vue_options__)
+	    hotAPI.createRecord("data-v-14df2f2a", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-19b9ce04", __vue_options__)
+	    hotAPI.reload("data-v-14df2f2a", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] TabGroup.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -2339,8 +2339,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-19b9ce04!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./TabGroup.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-19b9ce04!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./TabGroup.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-14df2f2a!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./TabGroup.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-14df2f2a!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./TabGroup.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -2699,7 +2699,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-19b9ce04", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-14df2f2a", module.exports)
 	  }
 	}
 
@@ -2729,7 +2729,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/media/m/data/uni/biodtmin/dias.project/vue-strap/src/components/Tabs.vue"
+	__vue_options__.__file = "/media/m/data/uni/biodtmin/biigle.project/vue-strap/src/components/Tabs.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -2740,9 +2740,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-8f8226d0", __vue_options__)
+	    hotAPI.createRecord("data-v-3e4e5b02", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-8f8226d0", __vue_options__)
+	    hotAPI.reload("data-v-3e4e5b02", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Tabs.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -2766,8 +2766,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-8f8226d0!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Tabs.vue", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-8f8226d0!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Tabs.vue");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-3e4e5b02!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Tabs.vue", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js?sourceMap!./../../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-3e4e5b02!./../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Tabs.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -3197,7 +3197,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-8f8226d0", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-3e4e5b02", module.exports)
 	  }
 	}
 
@@ -3227,7 +3227,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/media/m/data/uni/biodtmin/dias.project/vue-strap/src/Alert.vue"
+	__vue_options__.__file = "/media/m/data/uni/biodtmin/biigle.project/vue-strap/src/Alert.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -3238,9 +3238,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-63ddcf9d", __vue_options__)
+	    hotAPI.createRecord("data-v-5308cb78", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-63ddcf9d", __vue_options__)
+	    hotAPI.reload("data-v-5308cb78", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Alert.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -3264,8 +3264,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-63ddcf9d!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Alert.vue", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-63ddcf9d!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Alert.vue");
+			module.hot.accept("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-5308cb78!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Alert.vue", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-5308cb78!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Alert.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -3645,7 +3645,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-63ddcf9d", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-5308cb78", module.exports)
 	  }
 	}
 
@@ -3675,7 +3675,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/media/m/data/uni/biodtmin/dias.project/vue-strap/src/Datepicker.vue"
+	__vue_options__.__file = "/media/m/data/uni/biodtmin/biigle.project/vue-strap/src/Datepicker.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -3686,9 +3686,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-ad3f1b6a", __vue_options__)
+	    hotAPI.createRecord("data-v-20ca3804", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-ad3f1b6a", __vue_options__)
+	    hotAPI.reload("data-v-20ca3804", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Datepicker.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -3712,8 +3712,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-ad3f1b6a!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Datepicker.vue", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-ad3f1b6a!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Datepicker.vue");
+			module.hot.accept("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-20ca3804!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Datepicker.vue", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-20ca3804!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Datepicker.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -4294,7 +4294,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-ad3f1b6a", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-20ca3804", module.exports)
 	  }
 	}
 
@@ -4324,7 +4324,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/media/m/data/uni/biodtmin/dias.project/vue-strap/src/Popover.vue"
+	__vue_options__.__file = "/media/m/data/uni/biodtmin/biigle.project/vue-strap/src/Popover.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -4335,9 +4335,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-68871226", __vue_options__)
+	    hotAPI.createRecord("data-v-aa4661e6", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-68871226", __vue_options__)
+	    hotAPI.reload("data-v-aa4661e6", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Popover.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -4361,8 +4361,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-68871226!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Popover.vue", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-68871226!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Popover.vue");
+			module.hot.accept("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-aa4661e6!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Popover.vue", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-aa4661e6!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Popover.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -5568,7 +5568,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-68871226", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-aa4661e6", module.exports)
 	  }
 	}
 
@@ -5598,7 +5598,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (typeof __vue_options__ === "function") {
 	  __vue_options__ = __vue_options__.options
 	}
-	__vue_options__.__file = "/media/m/data/uni/biodtmin/dias.project/vue-strap/src/Typeahead.vue"
+	__vue_options__.__file = "/media/m/data/uni/biodtmin/biigle.project/vue-strap/src/Typeahead.vue"
 	__vue_options__.render = __vue_template__.render
 	__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
 	
@@ -5609,9 +5609,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	  if (!hotAPI.compatible) return
 	  module.hot.accept()
 	  if (!module.hot.data) {
-	    hotAPI.createRecord("data-v-d92f91f0", __vue_options__)
+	    hotAPI.createRecord("data-v-d17b53a2", __vue_options__)
 	  } else {
-	    hotAPI.reload("data-v-d92f91f0", __vue_options__)
+	    hotAPI.reload("data-v-d17b53a2", __vue_options__)
 	  }
 	})()}
 	if (__vue_options__.functional) {console.error("[vue-loader] Typeahead.vue: functional components are not supported and should be defined in plain js files using render functions.")}
@@ -5635,8 +5635,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-d92f91f0!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Typeahead.vue", function() {
-				var newContent = require("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-d92f91f0!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Typeahead.vue");
+			module.hot.accept("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-d17b53a2!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Typeahead.vue", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js?sourceMap!./../node_modules/vue-loader/lib/style-rewriter.js?id=data-v-d17b53a2!./../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Typeahead.vue");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -5654,7 +5654,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	
 	
 	// module
-	exports.push([module.id, "\n.dropdown-menu > li > a {\n  cursor: pointer;\n}\n", "", {"version":3,"sources":["/./src/Typeahead.vue?8bb3913a"],"names":[],"mappings":";AA2IA;EACA,gBAAA;CACA","file":"Typeahead.vue","sourcesContent":["<template>\n  <div :style=\"{position: 'relative'}\" :class=\"{'open':showDropdown}\">\n    <input type=\"text\" class=\"form-control\" autocomplete=\"off\"\n      v-model=\"val\"\n      :placeholder=\"placeholder\"\n      @blur=\"showDropdown = false\"\n      @keydown.down=\"down\"\n      @keydown.enter= \"hit\"\n      @keydown.esc=\"reset\"\n      @keydown.up=\"up\"\n    />\n    <ul class=\"dropdown-menu\" ref=\"dropdown\">\n      <li v-for=\"(item, i) in items\" :class=\"{'active': isActive(i)}\">\n        <a @mousedown.prevent=\"hit\" @mousemove=\"setActive(i)\">\n          <component :is=\"tmpl\" :item=\"item\"></component>\n        </a>\n      </li>\n    </ul>\n  </div>\n</template>\n\n<script>\nimport {delayer, getJSON} from './utils/utils.js'\nvar DELAY = 300\n\nexport default {\n  props: {\n    async: {type: String},\n    data: {type: Array},\n    delay: {type: Number, default: DELAY},\n    asyncKey: {type: String, default: null},\n    limit: {type: Number, default: 8},\n    matchCase: {type: Boolean, default: false},\n    matchStart: {type: Boolean, default: false},\n    matchProperty: {type: String},\n    onHit: {\n      type: Function,\n      default (item) {\n        this.reset()\n        this.value = item\n      }\n    },\n    placeholder: {type: String},\n    template: {type: String},\n    value: {type: String, default: ''}\n  },\n  data () {\n    return {\n      showDropdown: false,\n      noResults: true,\n      current: 0,\n      items: [],\n      val: ''\n    }\n  },\n  computed: {\n    templateHtml () { return typeof this.template === 'string' ? '<span>' + this.template + '</span>' : null },\n    tmpl () { return this._tmpl}\n  },\n  watch: {\n    val (val, old) {\n      this.$emit('input', val)\n      if (val !== old) this.update()\n    },\n    value (val) {\n      if (this.val !== val) { this.val = val }\n    }\n  },\n  created () {\n    this.val = this.value\n    this._tmpl = {\n      template: this.templateHtml || '<strong v-html=\"item\"></strong>',\n      props: {\n        item: {default: null}\n      }\n    }\n    this.update()\n  },\n  methods: {\n    setItems (data) {\n      if (this.async) {\n        this.items = this.asyncKey ? data[this.asyncKey] : data\n        this.items = this.items.slice(0, this.limit)\n      } else {\n        this.items = (data || []).filter(value => {\n          if (typeof value === 'object') {\n            if (this.matchProperty) {\n              value = value[this.matchProperty]\n            } else {\n              return true\n            }\n          }\n          value = this.matchCase ? value : value.toLowerCase()\n          var query = this.matchCase ? this.val : this.val.toLowerCase()\n          return this.matchStart ? value.indexOf(query) === 0 : value.indexOf(query) !== -1\n        }).slice(0, this.limit)\n      }\n      this.showDropdown = this.items.length > 0\n    },\n    update: delayer(function () {\n      if (!this.val) {\n        this.reset()\n        return false\n      }\n      if (this.async) {\n        getJSON(this.async + this.val).then(data => {\n          this.setItems(data)\n        })\n      } else if (this.data) {\n        this.setItems(this.data)\n      }\n    }, 'delay', DELAY),\n    reset () {\n      this.items = []\n      this.val = ''\n      this.loading = false\n      this.showDropdown = false\n    },\n    setActive (index) {\n      this.current = index\n    },\n    isActive (index) {\n      return this.current === index\n    },\n    hit (e) {\n      e.preventDefault()\n      this.onHit(this.items[this.current], this)\n    },\n    up () {\n      if (this.current > 0) this.current--\n    },\n    down () {\n      if (this.current < this.items.length - 1) this.current++\n    }\n  }\n}\n</script>\n\n<style>\n.dropdown-menu > li > a {\n  cursor: pointer;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.dropdown-menu > li > a {\n  cursor: pointer;\n}\n", "", {"version":3,"sources":["/./src/Typeahead.vue?7aacf532"],"names":[],"mappings":";AAgJA;EACA,gBAAA;CACA","file":"Typeahead.vue","sourcesContent":["<template>\n  <div :style=\"{position: 'relative'}\" :class=\"{'open':showDropdown}\">\n    <input type=\"text\" class=\"form-control\" autocomplete=\"off\"\n      v-model=\"val\"\n      :placeholder=\"placeholder\"\n      @blur=\"showDropdown = false\"\n      @keydown.down=\"down\"\n      @keydown.enter= \"hit\"\n      @keydown.esc=\"reset\"\n      @keydown.up=\"up\"\n    />\n    <ul class=\"dropdown-menu\" ref=\"dropdown\">\n      <li v-for=\"(item, i) in items\" :class=\"{'active': isActive(i)}\">\n        <a @mousedown.prevent=\"hit\" @mousemove=\"setActive(i)\">\n          <component :is=\"tmpl\" :item=\"item\"></component>\n        </a>\n      </li>\n    </ul>\n  </div>\n</template>\n\n<script>\nimport {delayer, getJSON} from './utils/utils.js'\nvar DELAY = 300\n\nexport default {\n  props: {\n    async: {type: String},\n    data: {type: Array},\n    delay: {type: Number, default: DELAY},\n    asyncKey: {type: String, default: null},\n    limit: {type: Number, default: 8},\n    matchCase: {type: Boolean, default: false},\n    matchStart: {type: Boolean, default: false},\n    matchProperty: {type: String},\n    onHit: {\n      type: Function,\n      default (item) {\n        this.reset()\n        this.value = item\n      }\n    },\n    placeholder: {type: String},\n    template: {type: String},\n    value: {type: String, default: ''}\n  },\n  data () {\n    return {\n      showDropdown: false,\n      noResults: true,\n      current: 0,\n      items: [],\n      val: '',\n      skipUpdate: false\n    }\n  },\n  computed: {\n    templateHtml () { return typeof this.template === 'string' ? '<span>' + this.template + '</span>' : null },\n    tmpl () { return this._tmpl}\n  },\n  watch: {\n    val (val, old) {\n      this.$emit('input', val)\n      if (val !== old) this.update()\n    },\n    value (val) {\n      if (this.val !== val) { this.val = val }\n    }\n  },\n  created () {\n    this.val = this.value\n    this._tmpl = {\n      template: this.templateHtml || '<strong v-html=\"item\"></strong>',\n      props: {\n        item: {default: null}\n      }\n    }\n    this.update()\n  },\n  methods: {\n    setItems (data) {\n      if (this.async) {\n        this.items = this.asyncKey ? data[this.asyncKey] : data\n        this.items = this.items.slice(0, this.limit)\n      } else {\n        this.items = (data || []).filter(value => {\n          if (typeof value === 'object') {\n            if (this.matchProperty) {\n              value = value[this.matchProperty]\n            } else {\n              return true\n            }\n          }\n          value = this.matchCase ? value : value.toLowerCase()\n          var query = this.matchCase ? this.val : this.val.toLowerCase()\n          return this.matchStart ? value.indexOf(query) === 0 : value.indexOf(query) !== -1\n        }).slice(0, this.limit)\n      }\n      this.showDropdown = this.items.length > 0\n    },\n    update: delayer(function () {\n      if (this.skipUpdate) {\n        this.skipUpdate = false\n        return false\n      }\n      if (!this.val) {\n        this.reset()\n        return false\n      }\n      if (this.async) {\n        getJSON(this.async + this.val).then(data => {\n          this.setItems(data)\n        })\n      } else if (this.data) {\n        this.setItems(this.data)\n      }\n    }, 'delay', DELAY),\n    reset () {\n      this.items = []\n      this.val = ''\n      this.loading = false\n      this.showDropdown = false\n    },\n    setActive (index) {\n      this.current = index\n    },\n    isActive (index) {\n      return this.current === index\n    },\n    hit (e) {\n      e.preventDefault()\n      this.skipUpdate = !!this.onHit(this.items[this.current], this)\n    },\n    up () {\n      if (this.current > 0) this.current--\n    },\n    down () {\n      if (this.current < this.items.length - 1) this.current++\n    }\n  }\n}\n</script>\n\n<style>\n.dropdown-menu > li > a {\n  cursor: pointer;\n}\n</style>\n"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -5726,7 +5726,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	      noResults: true,
 	      current: 0,
 	      items: [],
-	      val: ''
+	      val: '',
+	      skipUpdate: false
 	    };
 	  },
 	
@@ -5787,6 +5788,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    update: (0, _utils.delayer)(function () {
 	      var _this2 = this;
 	
+	      if (this.skipUpdate) {
+	        this.skipUpdate = false;
+	        return false;
+	      }
 	      if (!this.val) {
 	        this.reset();
 	        return false;
@@ -5813,7 +5818,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 	    hit: function hit(e) {
 	      e.preventDefault();
-	      this.onHit(this.items[this.current], this);
+	      this.skipUpdate = !!this.onHit(this.items[this.current], this);
 	    },
 	    up: function up() {
 	      if (this.current > 0) this.current--;
@@ -5903,7 +5908,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	if (false) {
 	  module.hot.accept()
 	  if (module.hot.data) {
-	     require("vue-hot-reload-api").rerender("data-v-d92f91f0", module.exports)
+	     require("vue-hot-reload-api").rerender("data-v-d17b53a2", module.exports)
 	  }
 	}
 
