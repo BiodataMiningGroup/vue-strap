@@ -50,8 +50,7 @@ export default {
       noResults: true,
       current: 0,
       items: [],
-      val: '',
-      skipUpdate: false
+      val: ''
     }
   },
   computed: {
@@ -99,10 +98,6 @@ export default {
       this.showDropdown = this.items.length > 0
     },
     update: delayer(function () {
-      if (this.skipUpdate) {
-        this.skipUpdate = false
-        return false
-      }
       if (!this.val) {
         this.reset()
         return false
@@ -129,7 +124,7 @@ export default {
     },
     hit (e) {
       e.preventDefault()
-      this.skipUpdate = !!this.onHit(this.items[this.current], this)
+      this.onHit(this.items[this.current], this)
     },
     up () {
       if (this.current > 0) this.current--
