@@ -6,7 +6,7 @@
       @blur="showDropdown = false"
       @keydown.stop.prevent.down="down"
       @keydown.stop.prevent.enter="hit"
-      @keydown.stop.prevent.esc="reset"
+      @keydown.stop.prevent.esc="clear"
       @keydown.stop.prevent.up="up"
       @keydown="update"
     />
@@ -119,6 +119,10 @@ export default {
       this.loading = false
       this.showDropdown = false
       this.current = 0
+    },
+    clear () {
+      this.reset();
+      this.$emit('clear');
     },
     setActive (index) {
       this.current = index
