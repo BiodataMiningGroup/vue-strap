@@ -363,12 +363,12 @@ input.datepicker-input.with-reset-button {
 }
 .datepicker-popup {
   position: absolute;
-  border: 1px solid #ccc;
+  border: 1px solid #555;
   border-radius: 5px;
-  background: #fff;
+  background-color: #222;
   margin-top: 2px;
   z-index: 1000;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 .datepicker-inner {
   width: 218px;
@@ -400,14 +400,13 @@ input.datepicker-input.with-reset-button {
   line-height: 45px;
 }
 .datepicker-item-disable {
-  background-color: white!important;
   cursor: not-allowed!important;
 }
 .decadeRange span:first-child,
 .decadeRange span:last-child,
 .datepicker-item-disable,
 .datepicker-item-gray {
-  color: #999;
+  opacity: .65;
 }
 
 .datepicker-dateRange-item-active:hover,
@@ -429,7 +428,7 @@ input.datepicker-input.with-reset-button {
 .datepicker-ctrl i:hover,
 .datepicker-dateRange span:hover,
 .datepicker-dateRange-item-hover {
-  background-color : #eeeeee;
+  background-color : #090909;
 }
 .datepicker-weekRange span {
   font-weight: bold;
