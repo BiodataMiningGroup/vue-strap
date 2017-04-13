@@ -1,19 +1,19 @@
 <template>
-  <div :style="{position: 'relative'}" :class="{'open':showDropdown}">
-    <input type="text" class="form-control" autocomplete="off"
+  <div :style="{position: 'relative'}" :class="{open:showDropdown}">
+    <input class="form-control" autocomplete="off"
       v-model="val"
       :placeholder="placeholder"
+      :type.once="type"
       @blur="showDropdown = false"
-      @keydown.stop.prevent.down="down"
-      @keydown.stop.prevent.enter="hit"
-      @keydown.stop.prevent.esc="clear"
-      @keydown.stop.prevent.up="up"
-      @keydown="update"
+      @keydown.down.prevent="down"
+      @keydown.enter.prevent="hit"
+      @keydown.esc="clear"
+      @keydown.up.prevent="up"
     />
     <ul class="dropdown-menu" ref="dropdown">
-      <li v-for="(item, i) in items" :class="{'active': isActive(i)}">
+      <li v-for="(item, i) in items" :class="{active: isActive(i)}">
         <a @mousedown.prevent="hit" @mousemove="setActive(i)">
-          <component :is="tmpl" :item="item"></component>
+          <component :is="templateComp" :item="item"></component>
         </a>
       </li>
     </ul>
@@ -36,43 +36,38 @@ export default {
     matchProperty: {type: String},
     onHit: {
       type: Function,
-      default (item) {
-        this.reset()
-        this.value = item
-      }
+      default (item) { return item }
     },
     placeholder: {type: String},
     template: {type: String},
+    type: {type: String, default: 'text'},
     value: {type: String, default: ''}
   },
   data () {
     return {
+      asign: '',
       showDropdown: false,
       noResults: true,
       current: 0,
       items: [],
-      val: ''
+      val: this.value
     }
   },
   computed: {
-    templateHtml () { return typeof this.template === 'string' ? '<span>' + this.template + '</span>' : null },
-    tmpl () { return this._tmpl}
+    templateComp () {
+      return {
+        template: typeof this.template === 'string' ? '<span>' + this.template + '</span>' : '<strong v-html="item"></strong>',
+        props: { item: {default: null} }
+      }
+    }
   },
   watch: {
     val (val, old) {
       this.$emit('input', val)
+      if (val !== old && val !== this.asign) this.__update()
     },
     value (val) {
       if (this.val !== val) { this.val = val }
-    }
-  },
-  created () {
-    this.val = this.value
-    this._tmpl = {
-      template: this.templateHtml || '<strong v-html="item"></strong>',
-      props: {
-        item: {default: null}
-      }
     }
   },
   methods: {
@@ -96,26 +91,10 @@ export default {
       }
       this.showDropdown = this.items.length > 0
     },
-    update: delayer(function (e) {
-      if (e && e.keyCode === 13) {
-        // don't update on enter
-        return false
-      }
-      if (!this.val) {
-        this.reset()
-        return false
-      }
-      if (this.async) {
-        getJSON(this.async + this.val).then(data => {
-          this.setItems(data)
-        })
-      } else if (this.data) {
-        this.setItems(this.data)
-      }
-    }, 'delay', DELAY),
-    reset () {
+    setValue (value) {
+      this.asign = value
+      this.val = value
       this.items = []
-      this.val = ''
       this.loading = false
       this.showDropdown = false
       this.current = 0
@@ -124,21 +103,37 @@ export default {
       this.reset();
       this.$emit('clear');
     },
-    setActive (index) {
-      this.current = index
-    },
-    isActive (index) {
-      return this.current === index
-    },
+    reset () { this.setValue(null) },
+    setActive (index) { this.current = index },
+    isActive (index) { return this.current === index },
     hit () {
-      this.onHit(this.items[this.current], this)
+      if (this.items.length === 0) return;
+      this.setValue(this.onHit(this.items[this.current], this))
     },
     up () {
-      if (this.current > 0) this.current--
+      if (this.current > 0) { this.current-- }
+      else { this.current = this.items.length - 1 }
     },
     down () {
-      if (this.current < this.items.length - 1) this.current++
+      if (this.current < this.items.length - 1) { this.current++ }
+      else { this.current = 0 }
     }
+  },
+  created () {
+    this.__update = delayer(function () {
+      if (!this.val) {
+        this.reset()
+        return
+      }
+      this.asign = ''
+      if (this.async) {
+        getJSON(this.async + this.val).then(data => {
+          this.setItems(data)
+        })
+      } else if (this.data) {
+        this.setItems(this.data)
+      }
+    }, 'delay', DELAY)
   }
 }
 </script>

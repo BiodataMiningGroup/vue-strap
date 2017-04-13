@@ -2,9 +2,9 @@
   <doc-section id="datepicker" name="Datepicker">
     <div class="bs-example">
       <p>
-        <pre>Selected date is: {{dp_string}}</pre>
+        <pre>Selected date is: {{dateString}}</pre>
       </p>
-      <datepicker ref="dp" v-model="value" :disabled-days-of-Week="disabled" :format="format" :clear-button="clear" :placeholder="placeholder" width="370px"></datepicker>
+      <datepicker ref="dp" v-model="date" :disabled-days-of-week="disabled" :format="format" :clear-button="clear" :placeholder="placeholder" width="370px"></datepicker>
       <h4>Disabled days of week</h4>
 
       <v-select multiple v-model="disabled" :options="[0,1,2,3,4,5,6]"></v-select>
@@ -13,7 +13,7 @@
       <v-select v-model="format" :options="formats"></v-select>
 
       <h4>Reset button</h4>
-      <checkbox :checked="clear" @checked="clear = arguments[0]" type="primary">toggle clear button</checkbox>
+      <checkbox :value="clear" @checked="clear = arguments[0]" type="primary">toggle clear button</checkbox>
     </div>
     <doc-code language="markup">
       &lt;datepicker v-model="value" :disabled-days-of-Week="disabled" :format="format" :clear-button="clear" :placeholder="placeholder">&lt;/datepicker>
@@ -54,21 +54,33 @@
       <div>
         <p>width</p>
         <p><code>String</code></p>
-        <p>200px</p>
+        <p></p>
         <p>Width of the input DOM</p>
       </div>
+      <div>
+        <p>icons-font</p>
+        <p><code>String</code></p>
+        <p><code>glyphicon</code></p>
+        <p>The icon font used for arrows. Can be 'glyphicon' or 'fa' (Font Awesome)</p>
+      </div>
     </doc-table>
-  </div>
-  <div></div>
+    <doc-table type="Events">
+      <div>
+        <p>input</p>
+        <p>(<code>value:string</code>)</p>
+        <p>Return the selected value.</p>
+      </div>
+    </doc-table>
+  </doc-section>
 </template>
 
 <script>
 import docSection from './utils/docSection.vue'
 import docTable from './utils/docTable.js'
 import docCode from './utils/docCode.js'
-import checkbox from 'src/Checkbox.vue'
-import datepicker from 'src/Datepicker.vue'
-import vSelect from 'src/components/Select.vue'
+import Checkbox from 'src/Checkbox.vue'
+import Datepicker from 'src/Datepicker.vue'
+import vSelect from 'src/Select.vue'
 import vOption from 'src/Option.vue'
 
 export default {
@@ -76,41 +88,31 @@ export default {
     docSection,
     docTable,
     docCode,
-    checkbox,
-    datepicker,
+    Checkbox,
+    Datepicker,
     vSelect,
     vOption
   },
   data () {
     return {
       clear: true,
-      datestr: '',
       disabled: [],
       format: 'yyyy-MM-dd',
       formats: ['dd/MM/yyyy', 'dd-MM-yyyy', 'yyyy,MM,dd', 'yyyy-MM-dd', 'yyyy.MM.dd', 'MMM/dd/yyyy', 'MMMM/dd/yyyy', 'MM/dd/yyyy', 'MM-dd-yyyy'],
       placeholder: 'placeholder is displayed when value is null or empty',
-      value: '2015-06-10'
+      date: '2015-06-10'
     }
   },
   computed: {
-    dp_string() {
-      return this.datestr
+    dateString () {
+      let date
+      if (this.date.length === 10 && (this.format === 'dd-MM-yyyy' || this.format === 'dd/MM/yyyy')) {
+        date = new Date(this.date.substring(6, 10), this.date.substring(3, 5), this.date.substring(0, 2))
+      } else {
+        date = new Date(this.date)
+      }
+      return isNaN(date.getFullYear()) ? new Date().toString() : date.toString()
     }
   },
-  mounted() {
-    this.datestr = new Date(this.$refs.dp.parse()).toString()
-  },
-  watch: {
-    value( nval ) {
-      if(this.$refs.dp)
-        this.datestr = new Date(this.$refs.dp.parse()).toString()
-    },
-    disabled () {
-      this.$refs.dp.getDateRange()
-    },
-    format (newV) {
-      this.value = this.$refs.dp.stringify()
-    }
-  }
 }
 </script>

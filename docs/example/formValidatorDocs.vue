@@ -1,7 +1,8 @@
 <template>
   <doc-section id="form-validator" name="Form Validator">
-    <p>This is not a style component, is just a global validation manager.</p>
-    <p>If you need to evaluate if a group of elements are all valids, you can handle easier with this component.</p>
+    <p>This is not a style component, but a global validation manager.</p>
+    <p>If you need to evaluate if a group of components are valids, you can handle easier with this component.</p>
+    <p>Actually only supported input & select components.</p>
     <p>In this example, the buttons and tabs are disabled while the inner elements are empty.</p>
     <div class="bs-example">
       <h4>Basic Usage:</h4>
@@ -21,8 +22,7 @@
         &lt;form-validator @valid="valid.all = true" @invalid="valid.all = false">
             ...
         &lt;/form-validator>
-    </doc-code>
-
+      </doc-code>
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
           <p><pre>Valid user data : {{valid.user}}</pre></p>
@@ -37,7 +37,7 @@
       <div class="row">
         <form-validator v-model="valid.all">
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            <tabs :active="active">
+            <tabs v-model="active">
               <tab header="User">
                 <form-validator v-model="valid.user">
                   <bs-input label="User Name" required></bs-input>
@@ -63,7 +63,7 @@
     <doc-code language="markup">
         &lt;form-validator v-model="valid.all">
           &lt;div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-            &lt;tabs :active="active">
+            &lt;tabs v-model="active">
               &lt;tab header="User">
                 &lt;form-validator @valid="valid.user = true" @invalid="valid.user = false">
                   &lt;bs-input label="User Name" required>&lt;/bs-input>
@@ -72,7 +72,7 @@
                 &lt;button type="button" class="btn btn-primary" :disabled="!valid.user" @click="active = 1">Continue&lt;/button>
               &lt;/tab>
               &lt;tab header="Direction" :disabled="!valid.user">
-                &lt;form-validator @valid="valid.direction = true" @invalid="valid.direction = false">
+                &lt;form-validator @isvalid="valid.direction = arguments[0]">
                   &lt;div class="form-validator">
                     &lt;label class="control-label">Continent&lt;/label>
                     &lt;v-select required justified :options="['America','Europe']" clear-button>&lt;/v-select>
@@ -100,11 +100,11 @@
 import docSection from './utils/docSection.vue'
 import docTable from './utils/docTable.js'
 import docCode from './utils/docCode.js'
-import formValidator from 'src/components/FormValidator.vue'
-import bsInput from 'src/components/Input.vue'
-import tab from 'src/components/Tab.vue'
-import tabs from 'src/components/Tabs.vue'
-import vSelect from 'src/components/Select.vue'
+import formValidator from 'src/FormValidator.vue'
+import bsInput from 'src/Input.vue'
+import tab from 'src/Tab.vue'
+import tabs from 'src/Tabs.vue'
+import vSelect from 'src/Select.vue'
 
 export default {
   components: {
