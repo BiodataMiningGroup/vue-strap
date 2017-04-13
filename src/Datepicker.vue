@@ -242,6 +242,7 @@ export default {
     },
     parse (str) {
       if (str === undefined || str === null) { str = this.val }
+      if (!str) return new Date()
       let date = str.length === 10 && (this.format === 'dd-MM-yyyy' || this.format === 'dd/MM/yyyy') ?
         new Date(str.substring(6, 10), str.substring(3, 5)-1, str.substring(0, 2)) :
         new Date(str)
@@ -338,6 +339,9 @@ export default {
 .datepicker {
   position: relative;
   display: inline-block;
+}
+.datepicker-block {
+    display: block;
 }
 input.datepicker-input.with-reset-button {
   padding-right: 25px;
