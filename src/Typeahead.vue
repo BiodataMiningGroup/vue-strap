@@ -56,7 +56,7 @@ export default {
   computed: {
     templateComp () {
       return {
-        template: typeof this.template === 'string' ? '<span>' + this.template + '</span>' : '<strong v-html="item"></strong>',
+        template: typeof this.template === 'string' ? '<span>' + this.template + '</span>' : this.template,
         props: { item: {default: null} }
       }
     }
